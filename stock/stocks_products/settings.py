@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'stocks_products.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db_docker_2',
+        'NAME': os.path.join(BASE_DIR, 'db_docker_2.sqlite3'),
     }
 }
 
